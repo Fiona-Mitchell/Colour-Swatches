@@ -1,6 +1,8 @@
 body{
   margin: 0;
-  background-color:#b4cbf0;
+  background: rgb(226,250,255);
+  background: linear-gradient(180deg, rgba(226,250,255,1) 0%, rgba(180,203,240,1) 100%);
+  height: 100vh;
 }
 
 * {
@@ -9,20 +11,37 @@ body{
 
 h2{
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   font-family: arial;
   z-index: 2;
-  color: #b4cbf0;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 50px;
 }
 
+.rainbow{
+  background-image: linear-gradient(to left, #4e6c9c, #5392bd, #61c0cf, #61cfbd);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+/* Responsive size*/
+.color-scheme {
+  width: 100vw;
+  margin: 50px auto;
+}
+
+
 /* Float for each pack of colour swatches*/
-.collection-1, .collection-2, .collection-3, .collection-4, .collection-5,.collection-6{
+.collection-1, .collection-2, .collection-3, .collection-4, .collection-5, .collection-6, .collection-7, .collection-8, .collection-9{
   float: left;
   width: 250px;
-  margin: 30px 10px;
+  padding: 0 20px;
+  margin: 30px auto;
   transition: 0.8s;
 }
+
 
 /* SWATCHES SET 1 on HOVER*/
 .collection-1:hover{
@@ -36,35 +55,30 @@ h2{
       transform: rotate(10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(114, 76, 249, 0.5);
-      width: 235px;
     }
 
     .collection-1:hover > div.swatch1B{
       transform: rotate(5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(86, 69, 146, 0.5);
-      width: 235px;
     }
 
     .collection-1:hover > div.swatch1C{
       transform: rotate(0deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(202, 125, 149, 0.5);
-      width: 235px;
     }
 
     .collection-1:hover > div.swatch1D{
       transform: rotate(-5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(248, 150, 216, 0.5);
-      width: 235px;
     }
 
     .collection-1:hover > div.swatch1E{
       transform: rotate(-10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(237, 246, 125, 0.5);
-      width: 235px;
 }
 
 
@@ -79,35 +93,30 @@ h2{
       transform: rotate(10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(158, 143, 178, 0.5);
-      width: 235px;
     }
 
     .collection-2:hover > div.swatch2B{
       transform: rotate(5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(167, 172, 217, 0.5);
-      width: 235px;
     }
 
     .collection-2:hover > div.swatch2C{
       transform: rotate(0deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(147, 198, 214, 0.5);
-      width: 235px;
     }
 
     .collection-2:hover > div.swatch2D{
       transform: rotate(-5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(130, 174, 177, 0.5);
-      width: 235px;
     }
 
     .collection-2:hover > div.swatch2E{
       transform: rotate(-10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(102, 133, 134, 0.5);
-      width: 235px;
 }
 
 
@@ -122,35 +131,30 @@ h2{
       transform: rotate(10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(120, 192, 224, 0.5);
-      width: 235px;
     }
 
     .collection-3:hover > div.swatch3B{
       transform: rotate(5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(68, 157, 209, 0.5);
-      width: 235px;
     }
 
     .collection-3:hover > div.swatch3C{
       transform: rotate(0deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(21, 5, 120, 0.5);
-      width: 235px;
     }
 
     .collection-3:hover > div.swatch3D{
       transform: rotate(-5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(14, 14, 82, 0.5);
-      width: 235px;
     }
 
     .collection-3:hover > div.swatch3E{
       transform: rotate(-10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(57, 67, 183, 0.5);
-      width: 235px;
 }
 
 
@@ -166,35 +170,30 @@ h2{
       transform: rotate(10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(255, 188, 10, 0.5);
-      width: 235px;
     }
 
     .collection-4:hover > div.swatch4B{
       transform: rotate(5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(236, 125, 16, 0.5);
-      width: 235px;
     }
 
     .collection-4:hover > div.swatch4C{
       transform: rotate(0deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(252, 47, 0, 0.5);
-      width: 235px;
     }
 
     .collection-4:hover > div.swatch4D{
       transform: rotate(-5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(236, 8, 104, 0.5);
-      width: 235px;
     }
 
     .collection-4:hover > div.swatch4E{
       transform: rotate(-10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(194, 0, 251, 0.5);
-      width: 235px;
 }
 
 
@@ -210,37 +209,31 @@ h2{
       transform: rotate(10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(255, 196, 155, 0.5);
-      width: 235px;
     }
 
     .collection-5:hover > div.swatch5B{
       transform: rotate(5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(225, 239, 211, 0.5);
-      width: 235px;
     }
 
     .collection-5:hover > div.swatch5C{
       transform: rotate(0deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(173, 183, 196, 0.5);
-      width: 235px;
     }
 
     .collection-5:hover > div.swatch5D{
       transform: rotate(-5deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(0, 27, 46, 0.5);
-      width: 235px;
     }
 
     .collection-5:hover > div.swatch5E{
       transform: rotate(-10deg);
       transform-origin: top left;
       box-shadow: 15px 0px rgba(41, 76, 96, 0.5);
-      width: 235px;
 }
-
 
 
 /* SWATCHES SET 2 on HOVER*/
@@ -253,43 +246,144 @@ h2{
     .collection-6:hover > div.swatch6A{
       transform: rotate(10deg);
       transform-origin: top left;
-      box-shadow: 15px 0px rgba(141, 106, 159, 0.5);
-      width: 235px;
+      box-shadow: 15px 0px rgba(1, 21, 2, 0.5);
     }
 
     .collection-6:hover > div.swatch6B{
       transform: rotate(5deg);
       transform-origin: top left;
-      box-shadow: 15px 0px rgba(197, 203, 211, 0.5);
-      width: 235px;
+      box-shadow: 15px 0px rgba(1, 32, 15, 0.5);
     }
 
     .collection-6:hover > div.swatch6C{
       transform: rotate(0deg);
       transform-origin: top left;
-      box-shadow: 15px 0px rgba(140, 188, 185, 0.5);
-      width: 235px;
+      box-shadow: 15px 0px rgba(158, 197, 171, 0.5);
     }
 
     .collection-6:hover > div.swatch6D{
       transform: rotate(-5deg);
       transform-origin: top left;
-      box-shadow: 15px 0px rgba(221, 164, 72, 0.5);
-      width: 235px;
+      box-shadow: 15px 0px rgba(50, 116, 109, 0.5);
     }
 
     .collection-6:hover > div.swatch6E{
       transform: rotate(-10deg);
       transform-origin: top left;
-      box-shadow: 15px 0px rgba(187, 52, 47, 0.5);
-      width: 235px;
+      box-shadow: 15px 0px rgba(16, 79, 85, 0.5);
 }
 
-/* Responsive size*/
-.color-scheme {
-  padding: 10px;
-  margin: 50px auto;
-  display: relative;
+
+/* SWATCHES SET 7 on HOVER*/
+.collection-7:hover{
+  transform: rotate(0deg);
+  transform-origin: top left;
+}
+
+    /* SWATCHES SET 7 on HOVER CHILDREN*/
+    .collection-7:hover > div.swatch7A{
+      transform: rotate(10deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(84, 8, 4, 0.5);
+    }
+
+    .collection-7:hover > div.swatch7B{
+      transform: rotate(5deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(129, 23, 27, 0.5);
+    }
+
+    .collection-7:hover > div.swatch7C{
+      transform: rotate(0deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(173, 46, 36, 0.5);
+    }
+
+    .collection-7:hover > div.swatch7D{
+      transform: rotate(-5deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(199, 81, 70, 0.5);
+    }
+
+    .collection-7:hover > div.swatch7E{
+      transform: rotate(-10deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(234, 118, 74, 0.5);
+}
+
+
+/* SWATCHES SET 7 on HOVER*/
+.collection-8:hover{
+  transform: rotate(0deg);
+  transform-origin: top left;
+}
+
+    /* SWATCHES SET 7 on HOVER CHILDREN*/
+    .collection-8:hover > div.swatch8A{
+      transform: rotate(10deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(43, 45, 66, 0.5);
+    }
+
+    .collection-8:hover > div.swatch8B{
+      transform: rotate(5deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(80, 178, 192, 0.5);
+    }
+
+    .collection-8:hover > div.swatch8C{
+      transform: rotate(0deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(254, 239, 221, 0.5);
+    }
+
+    .collection-8:hover > div.swatch8D{
+      transform: rotate(-5deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(250, 170, 141, 0.5);
+    }
+
+    .collection-8:hover > div.swatch8E{
+      transform: rotate(-10deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(255, 64, 0, 0.5);
+}
+
+/* SWATCHES SET 7 on HOVER*/
+.collection-9:hover{
+  transform: rotate(0deg);
+  transform-origin: top left;
+}
+
+    /* SWATCHES SET 7 on HOVER CHILDREN*/
+    .collection-9:hover > div.swatch9A{
+      transform: rotate(10deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(240, 220, 202, 0.5);
+    }
+
+    .collection-9:hover > div.swatch9B{
+      transform: rotate(5deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(205, 198, 165, 0.5);
+    }
+
+    .collection-9:hover > div.swatch9C{
+      transform: rotate(0deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(141, 159, 135, 0.5);
+    }
+
+    .collection-9:hover > div.swatch9D{
+      transform: rotate(-5deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(111, 146, 131, 0.5);
+    }
+
+    .collection-9:hover > div.swatch9E{
+      transform: rotate(-10deg);
+      transform-origin: top left;
+      box-shadow: 15px 0px rgba(105, 109, 125, 0.5);
 }
 
 /* SWATCHES SET 1*/
@@ -297,9 +391,6 @@ h2{
   height: 80px;
   background-color: #724CF9;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swatch1B{
@@ -327,7 +418,6 @@ h2{
   height: 80px;
   background-color: #EDF67D;
   margin-top: -80px;
-  transform-origin: top left;
   border-radius: 5px;
 }
 
@@ -337,9 +427,6 @@ h2{
   height: 80px;
   background-color: #9E8FB2;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swatch2B{
@@ -367,7 +454,6 @@ h2{
   height: 80px;
   background-color: #668586;
   margin-top: -80px;
-  transform-origin: top left;
   border-radius: 5px;
 }
 
@@ -377,9 +463,6 @@ h2{
   height: 80px;
   background-color: #78C0E0;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swatch3B{
@@ -405,9 +488,8 @@ h2{
 
 .swatch3E{
   height: 80px;
-  background-color: #3943B7;
+  background-color: #4953C0;
   margin-top: -80px;
-  transform-origin: top left;
   border-radius: 5px;
 }
 
@@ -418,9 +500,6 @@ h2{
   height: 80px;
   background-color: #FFBC0A;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swatch4B{
@@ -446,9 +525,8 @@ h2{
 
 .swatch4E{
   height: 80px;
-  background-color: #C200FB;
+  background-color: #CB6EE7;
   margin-top: -80px;
-  transform-origin: top left;
   border-radius: 5px;
 }
 
@@ -459,9 +537,6 @@ h2{
   height: 80px;
   background-color: #FFC49B;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swatch5B{
@@ -489,47 +564,151 @@ h2{
   height: 80px;
   background-color: #294C60;
   margin-top: -80px;
-  transform-origin: top left;
   border-radius: 5px;
 }
 
 
 
-/* SWATCHES SET 3*/
+/* SWATCHES SET 6*/
 .swatch6A{
   height: 80px;
-  background-color: #8D6A9F;
+  background-color: #011502;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swatch6B{
   height: 80px;
-  background-color: #C5CBD3;
+  background-color: #01200f;
   margin-top: -80px;
   border-radius: 5px;
 }
 
 .swatch6C{
   height: 80px;
-  background-color: #8CBCB9;
+  background-color: #9ec5ab;
   margin-top: -80px;
   border-radius: 5px;
 }
 
 .swatch6D{
   height: 80px;
-  background-color: #DDA448;
+  background-color: #32746d;
   margin-top: -80px;
   border-radius: 5px;
 }
 
 .swatch6E{
   height: 80px;
-  background-color: #BB342F;
+  background-color: #104f55;
   margin-top: -80px;
-  transform-origin: top left;
+  border-radius: 5px;
+}
+
+
+
+/* SWATCHES SET 7*/
+.swatch7A{
+  height: 80px;
+  background-color: #540804;
+  border-radius: 5px;
+}
+
+.swatch7B{
+  height: 80px;
+  background-color: #81171b;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch7C{
+  height: 80px;
+  background-color: #ad2e24;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch7D{
+  height: 80px;
+  background-color: #c75146;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch7E{
+  height: 80px;
+  background-color: #ea764a;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+
+/* SWATCHES SET 8*/
+.swatch8A{
+  height: 80px;
+  background-color: #2b2d42;
+  border-radius: 5px;
+}
+
+.swatch8B{
+  height: 80px;
+  background-color: #50b2c0;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch8C{
+  height: 80px;
+  background-color: #feefdd;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch8D{
+  height: 80px;
+  background-color: #faaa8d;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch8E{
+  height: 80px;
+  background-color: #ff4000;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+
+/* SWATCHES SET 8*/
+.swatch9A{
+  height: 80px;
+  background-color: #f0dcca;
+  border-radius: 5px;
+}
+
+.swatch9B{
+  height: 80px;
+  background-color: #cdc6a5;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch9C{
+  height: 80px;
+  background-color: #8d9f87;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch9D{
+  height: 80px;
+  background-color: #6f9283;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch9E{
+  height: 80px;
+  background-color: #5E6A9B;
+  margin-top: -80px;
   border-radius: 5px;
 }
