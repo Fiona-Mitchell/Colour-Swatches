@@ -1,0 +1,136 @@
+body{
+  margin: 0;
+  background-color:#b4cbf0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: arial;
+  z-index: 2;
+  color: #b4cbf0;
+  letter-spacing: 2px;
+}
+
+
+.collection-1{
+  float: left;
+  width: 250px;
+  margin: 50px 0;
+}
+.collection-1:hover{
+  transform: rotate(0deg);
+  transform-origin: top left;
+}
+
+.collection-1:hover > div.swatch1A{
+  transform: rotate(10deg);
+  transform-origin: top left;
+  box-shadow: 15px 0px rgba(237, 246, 125, 0.5);
+  width: 235px;
+}
+
+.collection-1:hover > div.swatch1B{
+  transform: rotate(5deg);
+  transform-origin: top left;
+  box-shadow: 15px 0px rgba(248, 150, 216, 0.5);
+  width: 235px;
+}
+
+.collection-1:hover > div.swatch1C{
+  transform: rotate(0deg);
+  transform-origin: top left;
+  box-shadow: 15px 0px rgba(202, 125, 149, 0.5);
+  width: 235px;
+}
+
+.collection-1:hover > div.swatch1D{
+  transform: rotate(-5deg);
+  transform-origin: top left;
+  box-shadow: 15px 0px rgba(86, 69, 146, 0.5);
+  width: 235px;
+}
+
+.collection-1:hover > div.swatch1E{
+  transform: rotate(-10deg);
+  transform-origin: top left;
+  box-shadow: 15px 0px rgba(114, 76, 249, 0.5);
+  width: 235px;
+}
+
+
+.collection-2{
+  float: left;
+  width: 250px;
+  margin: 50px 0;
+}
+
+.collection-3{
+  float: left;
+  width: 250px;
+  margin: 50px 0;
+}
+
+.color-scheme {
+  width: 30vw;
+  margin: 50px auto;
+  display: relative;
+}
+
+.swatch1A{
+  height: 80px;
+  background-color: #EDF67D;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swatch1B{
+  height: 80px;
+  background-color: #f896d8;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch1C{
+  height: 80px;
+  background-color: #ca7df9;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch1D{
+  height: 80px;
+  background-color: #564592;
+  margin-top: -80px;
+  border-radius: 5px;
+}
+
+.swatch1E{
+  height: 80px;
+  background-color: #724cf9;
+  margin-top: -80px;
+  transform-origin: top left;
+  border-radius: 5px;
+}
+/* .swatch1E:hover{
+  transform: rotate(20deg);
+} */
+
+
+
+
+.swatch2A{
+  height: 50px;
+  background-color: blue;
+}
+
+.swatch3A{
+  height: 50px;
+  background-color: green;
+}
