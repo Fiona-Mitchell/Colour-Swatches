@@ -28,8 +28,8 @@ h2{
 
 /* Responsive size*/
 .color-scheme {
-  width: 100vw;
-  margin: 50px auto;
+  width: auto;
+  margin: 50px 20%;
 }
 
 
@@ -712,3 +712,27 @@ h2{
   margin-top: -80px;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .color-scheme {
+    width: auto;
+    margin: 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .color-scheme {
+    width: auto;
+    margin: 50px 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .collection-1, .collection-2, .collection-3, .collection-4, .collection-5, .collection-6, .collection-7, .collection-8, .collection-9{
+    width: 230px;
+    padding: 0 20px;
+    margin: 30px auto;
+  }
+}
+
+s
